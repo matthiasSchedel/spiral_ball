@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &589232031398381510
 Transform:
@@ -58,7 +58,7 @@ MonoBehaviour:
   radius: 1
   width: 0.28
   height: 0.89
-  length: 8.5
+  length: 3
   sides: 588
   offset: 0
 --- !u!23 &589232031398381561
@@ -70,7 +70,7 @@ MeshRenderer:
   m_GameObject: {fileID: 589232031398381562}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

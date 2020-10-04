@@ -19,6 +19,11 @@ public class Spiral : MonoBehaviour {
 	Vector3[] vertices;
 	int[] triangles;
 
+	public Vector3[] getVertices()
+	{
+		return radiusSurfaceVertices;
+	}
+
 	void Awake()
 	{
 		// MeshRenderer

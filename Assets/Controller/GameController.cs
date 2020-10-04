@@ -28,6 +28,9 @@ public class GameController : MonoBehaviour
 
     LevelController level;
 
+    [SerializeField]
+    private bool instantiatePlayer = false;
+
 
 
 
@@ -58,7 +61,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
-
+        level.LoadScene("GameOver");
     }
 
     private void SpawnPlayer()
@@ -85,7 +88,7 @@ public class GameController : MonoBehaviour
         score = 0;
         currentLevel = 0;
 
-        if (FindObjectOfType<Player>() == null)
+        if (FindObjectOfType<Player>() == null && instantiatePlayer)
         {
             SpawnPlayer();
         }
